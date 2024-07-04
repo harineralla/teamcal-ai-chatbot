@@ -11,13 +11,17 @@ const FetchResponse = ({ steps, triggerNextStep }) => {
     async function handleUserInput(userInput) {
         const response = await axios({
             method: 'post',
-            url: 'http://localhost/teamcal-ai-chatbot/PHP/index.php',
+            // url: 'http://localhost/teamcal-ai-chatbot/PHP/index.php',
+            // url: 'http://localhost:8080/chatbot',
+            url: 'http://localhost:8000/index.php',
             data: {
                 message: userInput
             },
             headers: {
+                'Access-Control-Allow-Origin': '*',
                 'Content-Type': 'application/json',
             },
+            // withCredentials: true,
         }).then(response => {
             console.log(response.data);
             // return response.data.response;

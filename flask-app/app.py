@@ -134,7 +134,7 @@ def get_response_route():
         user_message = request.json['message']
         
         intent = recognize_intent(user_message)
-        print(f"Recognized Intent: {intent}")
+        # print(f"Recognized Intent: {intent}")
         
         if intent:
             if intent['tag'] == 'schedule_meeting_details':
