@@ -1,0 +1,134 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hi",
+                "Hello",
+                "Is anyone there?",
+                "Good day"
+            ],
+            "responses": [
+                "Hello!",
+                "Hi there, how can I assist you?",
+                "Greetings! How can I help?"
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "Bye",
+                "See you later",
+                "Goodbye",
+                "I'm off"
+            ],
+            "responses": [
+                "Talk to you later",
+                "Goodbye! If you need anything else, just ping me."
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "Thanks",
+                "Thank you",
+                "Thanks a lot",
+                "Thank you very much"
+            ],
+            "responses": [
+                "You're welcome!",
+                "No problem at all."
+            ]
+        },
+        {
+            "tag": "schedule_meeting",
+            "patterns": [
+                "schedule a meeting",
+                "set up a meeting",
+                "book a meeting",
+                "can we schedule a meeting",
+                "I need to schedule a meeting",
+                "schedule a meeting today",
+                "schedule a meeting tomorrow",
+                "schedule a meeting on Tuesday",
+                "schedule a meeting at 10 AM",
+                "schedule a meeting this Friday at 3 PM",
+                "can you set up a meeting for me tomorrow afternoon"
+            ],
+            "responses": [
+                "Sure, let me go ahead and block the time.",
+                "Great! When would you like to schedule it for?",
+                "I can help with that. What time works best for you?"
+            ]
+        },
+        {
+            "tag": "schedule_meeting_details",
+            "patterns": [
+                "today at {time}",
+                "tomorrow at {time}",
+                "on {day} at {time}",
+                "{day} at {time}"
+            ],
+            "responses": [
+                "Sure, let me go ahead and block the time for {day} at {time}.",
+                "Got it, scheduling the meeting for {day} at {time}. Do you want to add any more people to the meeting?",
+                "Understood, blocking the time for {day} at {time}. Would you like to invite anyone else?"
+            ]
+        },
+        {
+            "tag": "add_participant",
+            "patterns": [
+                "add {participant}",
+                "include {participant} in the meeting",
+                "add {participant} to the schedule",
+                "invite {participant}",
+                "add more people",
+                "add someone else",
+                "include another person",
+                "invite more people"
+            ],
+            "responses": [
+                "Let me check availability with {participant}.",
+                "{participant} is available. Let me go ahead and add this meeting to {participant}'s calendar as well.",
+                "Who would you like to add?"
+            ]
+        },
+        {
+            "tag": "confirm_scheduling",
+            "patterns": [
+                "yes, please",
+                "sure, go ahead",
+                "okay, do that",
+                "yes, add them"
+            ],
+            "responses": [
+                "Confirmed! The meeting is scheduled.",
+                "Done! The meeting is now in everyone's calendar."
+            ]
+        },
+        {
+            "tag": "cancel_meeting",
+            "patterns": [
+                "cancel my meeting",
+                "I need to cancel the appointment",
+                "cancel today's meeting with John"
+            ],
+            "responses": [
+                "Sure, let me cancel that for you.",
+                "The meeting has been cancelled. Would you like to reschedule?"
+            ]
+        },
+        {
+            "tag": "modify_meeting",
+            "patterns": [
+                "reschedule the meeting to tomorrow",
+                "change the meeting time",
+                "move today's meeting to 2 PM"
+            ],
+            "responses": [
+                "When would you like to reschedule it to?",
+                "Got it. What time works best for you?"
+            ]
+        }
+    ]
+}

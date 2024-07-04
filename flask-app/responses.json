@@ -1,0 +1,12 @@
+{
+    "hello": ["Hi there! How can I assist you today?", "Hello! What can I do for you?"],
+    "goodbye": ["Goodbye! Have a great day!", "See you later!"],
+    "thanks": ["You're welcome!", "No problem at all!"],
+    "hours": ["We are open from 9 AM to 5 PM, Monday to Friday."],
+    "payments": ["We accept credit cards, PayPal, and cash."],
+    "services": ["We offer web development, data analysis, and AI consultation."],
+    "support": ["What kind of help do you need? I'm here for you."],
+    "delivery": ["We offer delivery via courier and it typically takes 2-3 days."],
+    "refund": ["You can return the product within 30 days for a full refund."],
+    "schedule meeting": ["Sure, when do you want to schedule the meeting?", "What time would be convenient for you to meet?"]
+}
