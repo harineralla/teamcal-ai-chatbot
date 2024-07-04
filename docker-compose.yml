@@ -1,0 +1,14 @@
+version: '3'
+services:
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:3000"
+  backend:
+    build: ./backend
+    ports:
+      - "8000:80"
+  flask_app:
+    build: ./flask_app
+    ports:
+      - "5000:5000"
