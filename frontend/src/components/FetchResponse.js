@@ -38,12 +38,12 @@ const FetchResponse = ({ steps, triggerNextStep }) => {
 
     useEffect(() => {
         const userInput = steps.userInput.value;
-        handleUserInput(userInput).then(res => {
-            // debugger
-        });
-    }, []);
+        handleUserInput(userInput);
+    }, [steps.userInput.value]);
 
     return loading ? <Loading /> : <span>{response}</span>;
+
+    // return loading ? <Loading /> : <span>{response}</span>;
 };
 
 

@@ -4,7 +4,10 @@ import ChatComponent from './components/ChatComponent';
 function App() {
   return (
     <div className="App">
-      <ChatComponent/>
+      <div className="header">
+        Teamcal.AI Chatbot
+      </div>
+      <ChatComponent />
     </div>
   );
 }

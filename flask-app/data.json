@@ -67,7 +67,8 @@
                 "today at {time}",
                 "tomorrow at {time}",
                 "on {day} at {time}",
-                "{day} at {time}"
+                "{day} at {time}",
+                "around {time}"
             ],
             "responses": [
                 "Sure, let me go ahead and block the time for {day} at {time}.",
@@ -78,8 +79,9 @@
         {
             "tag": "add_participant",
             "patterns": [
-                "add {participant}",
-                "include {participant} in the meeting",
+                "yes, add {participant}",
+                "yes, add {participant} and {participant}",
+                "yeah, include {participant} in the meeting",
                 "add {participant} to the schedule",
                 "invite {participant}",
                 "add more people",
@@ -88,7 +90,7 @@
                 "invite more people"
             ],
             "responses": [
-                "Let me check availability with {participant}.",
+                "Let me check availability with them.",
                 "{participant} is available. Let me go ahead and add this meeting to {participant}'s calendar as well.",
                 "Who would you like to add?"
             ]
@@ -99,7 +101,9 @@
                 "yes, please",
                 "sure, go ahead",
                 "okay, do that",
-                "yes, add them"
+                "yes, add them", 
+                "please, confirm meeting",
+                "confirm meeting"
             ],
             "responses": [
                 "Confirmed! The meeting is scheduled.",
