@@ -13,7 +13,8 @@ const FetchResponse = ({ steps, triggerNextStep }) => {
             method: 'post',
             // url: 'http://localhost/teamcal-ai-chatbot/PHP/index.php',
             // url: 'http://localhost:8080/chatbot',
-            url: 'http://localhost:8000/index.php',
+            // url: 'http://localhost:8000/index.php',
+            url: 'ec2-54-208-43-232.compute-1.amazonaws.com//:8000/index.php',
             data: {
                 message: userInput
             },

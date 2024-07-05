@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // echo '<script>console.log("Data received: '.json_encode($data).'");</script>'; 
     $userMessage = $data['message'];
     // echo $userMessage;
-    $url = 'http://0.0.0.0:5000/get_response';
+    $url = 'http://flask-app:5000/get_response';
     $ch = curl_init($url);
     $payload = json_encode(['message' => $userMessage]);
     curl_setopt($ch, CURLOPT_POSTFIELDS, $payload);
