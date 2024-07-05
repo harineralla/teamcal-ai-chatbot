@@ -16,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $meetingDate = $data['date'];
         $meetingTime = $data['time'];
 
-        $url = 'http://localhost:5000/schedule_meeting';
+        $url = 'http://flask-app:5000/schedule_meeting';
         $ch = curl_init($url);
         $payload = json_encode(['title' => $meetingTitle, 'date' => $meetingDate, 'time' => $meetingTime]);
         curl_setopt($ch, CURLOPT_POSTFIELDS, $payload);
